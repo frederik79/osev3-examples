@@ -8,10 +8,10 @@ MAINTAINER Noel OConnor  <noconnor@redhat.com>
 ENV GRADLE_VERSION 2.6
 ENV MAVEN_VERSION 3.3.3
 
-ENV http_proxy='http://squid.corp.qrious.co.nz:80'
-ENV HTTP_PROXY='http://squid.corp.qrious.co.nz:80'
-ENV https_proxy='https://squid.corp.qrious.co.nz:80'
-ENV HTTPS_PROXY='https://squid.corp.qrious.co.nz:80'
+ENV http_proxy='https://10.101.32.101:443'
+ENV HTTP_PROXY='https://10.101.32.101:443'
+ENV https_proxy='https://10.101.32.101:443'
+ENV HTTPS_PROXY='https://10.101.32.101:443'
 
 RUN yum install -y --enablerepo=centosplus \
     tar unzip bc which lsof java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
