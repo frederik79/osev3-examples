@@ -12,6 +12,8 @@ ENV http_proxy='https://10.101.32.101:443'
 ENV HTTP_PROXY='https://10.101.32.101:443'
 ENV https_proxy='https://10.101.32.101:443'
 ENV HTTPS_PROXY='https://10.101.32.101:443'
+ENV OSE_NEXUS_URL='https://10.101.41.10/nexus/content/groups/public/'
+
 
 RUN yum install -y --enablerepo=centosplus \
     tar unzip bc which lsof java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
