@@ -8,16 +8,16 @@ MAINTAINER Noel OConnor  <noconnor@redhat.com>
 ENV GRADLE_VERSION 2.6
 ENV MAVEN_VERSION 3.3.3
 
-#ENV http_proxy='https://10.101.32.101:443'
-#ENV HTTP_PROXY='https://10.101.32.101:443'
-#ENV https_proxy='https://10.101.32.101:443'
-#ENV HTTPS_PROXY='https://10.101.32.101:443'
-#ENV OSE_NEXUS_URL='http://10.101.41.10/nexus/content/groups/public/'
+ENV http_proxy='https://10.101.32.101:443'
+ENV HTTP_PROXY='https://10.101.32.101:443'
+ENV https_proxy='https://10.101.32.101:443'
+ENV HTTPS_PROXY='https://10.101.32.101:443'
+ENV OSE_NEXUS_URL='http://10.101.41.10/nexus/content/groups/public/'
 
-ENV http_proxy='https://squid:80'
-ENV HTTP_PROXY='https://squid:80'
-ENV https_proxy='https://squid:80'
-ENV HTTPS_PROXY='https://squid:80'
+#ENV http_proxy='https://squid:80'
+#ENV HTTP_PROXY='https://squid:80'
+#ENV https_proxy='https://squid:80'
+#ENV HTTPS_PROXY='https://squid:80'
 #ENV OSE_NEXUS_URL='http://10.101.41.10/nexus/content/groups/public/'
 
 
