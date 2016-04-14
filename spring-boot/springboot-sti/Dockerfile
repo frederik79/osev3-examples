@@ -13,6 +13,7 @@ ENV HTTP_PROXY='https://10.101.32.101:443'
 ENV https_proxy='https://10.101.32.101:443'
 ENV HTTPS_PROXY='https://10.101.32.101:443'
 
+RUN echo "proxy=https://10.101.32.101:443" >> /etc/yum.conf
 
 ENV OSE_NEXUS_URL='https://10.101.41.10/nexus/content/groups/public/'
 
