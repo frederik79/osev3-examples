@@ -6,8 +6,7 @@
 # For more information refer to the documentation:
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
-unset HTTPS_PROXY
-unset HTTP_PROXY
+
 if [ "$1" = "-h" ]; then
 	# If the 'springboot-sti' assemble script is executed with '-h' flag,
 	# print the usage.
