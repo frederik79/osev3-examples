@@ -14,7 +14,7 @@
        <mirror>
           <id>nexus</id>
               <mirrorOf>*</mirrorOf>
-              <url>http://10.101.41.10/nexus/content/groups/public</url>
+              <url>https://10.101.41.10/nexus/content/groups/public</url>
        </mirror>
    </mirrors>
     
