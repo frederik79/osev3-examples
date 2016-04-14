@@ -12,7 +12,7 @@ ENV MAVEN_VERSION 3.3.3
 ENV HTTP_PROXY='https://10.101.32.101:443'
 #ENV https_proxy='https://10.101.32.101:443'
 ENV HTTPS_PROXY='https://10.101.32.101:443'
-env NO_PROXY=10.101.41.10
+
 
 ENV OSE_NEXUS_URL='https://10.101.41.10/nexus/content/groups/public/'
 
