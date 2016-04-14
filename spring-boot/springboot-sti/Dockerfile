@@ -22,8 +22,6 @@ ENV OSE_NEXUS_URL='https://10.101.41.10/nexus/content/groups/public/'
 #ENV HTTPS_PROXY='https://squid:80'
 #ENV OSE_NEXUS_URL='http://10.101.41.10/nexus/content/groups/public/'
 
-RUN echo "proxy=http://10.101.32.101:443" >> /etc/yum.conf
-
 RUN yum install -y --enablerepo=centosplus \
     tar unzip bc which lsof java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
     yum clean all -y && \
