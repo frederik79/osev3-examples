@@ -9,11 +9,11 @@ ENV GRADLE_VERSION 2.6
 ENV MAVEN_VERSION 3.3.3
 
 #ENV http_proxy='https://10.101.32.101:443'
-#ENV HTTP_PROXY='https://10.101.32.101:443'
+ENV HTTP_PROXY='https://10.101.32.101:443'
 #ENV https_proxy='https://10.101.32.101:443'
-#ENV HTTPS_PROXY='https://10.101.32.101:443'
+ENV HTTPS_PROXY='https://10.101.32.101:443'
 
-RUN echo "proxy=https://10.101.32.101:443" >> /etc/yum.conf
+#RUN echo "proxy=https://10.101.32.101:443" >> /etc/yum.conf
 
 RUN echo "$HTTPS_PROXY"
 
