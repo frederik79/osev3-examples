@@ -10,7 +10,7 @@
             <!--<id>osenexus</id>-->
         <!--</mirror>-->
     <!--</mirrors>-->
-    
+     <!--
      <mirrors>
        <mirror>
           <id>nexus</id>
@@ -18,7 +18,8 @@
               <url>https://repository.jboss.org/</url>
        </mirror>
    </mirrors>
-    <!--
+   -->
+   
     <mirrors>
        <mirror>
           <id>nexus</id>
@@ -26,7 +27,7 @@
               <url>https://10.101.41.10/nexus/content/groups/public</url>
        </mirror>
    </mirrors>
-    -->
+    
     <profiles>
         <profile>
             <id>openshift</id>
