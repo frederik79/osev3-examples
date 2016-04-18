@@ -19,12 +19,6 @@ RUN echo "$HTTPS_PROXY"
 
 ENV OSE_NEXUS_URL='https://10.101.41.10/nexus/content/groups/public/'
 
-#ENV http_proxy='https://squid:80'
-#ENV HTTP_PROXY='https://squid:80'
-#ENV https_proxy='https://squid:80'
-#ENV HTTPS_PROXY='https://squid:80'
-#ENV OSE_NEXUS_URL='http://10.101.41.10/nexus/content/groups/public/'
-
 RUN yum install -y --enablerepo=centosplus \
     tar unzip bc which lsof java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
     yum clean all -y && \
@@ -41,6 +35,8 @@ RUN yum install -y --enablerepo=centosplus \
     mkdir -p /opt/app-root/source && chmod -R a+rwX /opt/app-root/source && \
     mkdir -p /opt/s2i/destination && chmod -R a+rwX /opt/s2i/destination && \
     mkdir -p /opt/app-root/src && chmod -R a+rwX /opt/app-root/src
+
+RUN yum install -y net-tools
 
 ENV PATH=/opt/maven/bin/:/opt/gradle/bin/:$PATH
 
