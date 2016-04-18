@@ -37,6 +37,8 @@ RUN yum install -y --enablerepo=centosplus \
     mkdir -p /opt/app-root/src && chmod -R a+rwX /opt/app-root/src
 
 RUN yum install -y net-tools
+RUN yum install -y telnet
+
 
 ENV PATH=/opt/maven/bin/:/opt/gradle/bin/:$PATH
 
